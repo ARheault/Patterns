@@ -1,0 +1,7 @@
+0 Mon Feb 15 13:01:24 PST 2021 Logger created
+1 Mon Feb 15 13:01:24 PST 2021 TextFile: Logger.txt
+2 Mon Feb 15 13:01:24 PST 2021 started
+3 Mon Feb 15 13:01:24 PST 2021 testing for formatting
+4 Mon Feb 15 13:01:24 PST 2021 just writing this because going back and doing these homeworks is actually pretty fun
+5 Mon Feb 15 13:01:24 PST 2021 Thanks again for the feedback, I definitely think it forced me to have a cleaner implementation
+6 Mon Feb 15 13:01:24 PST 2021 ended
