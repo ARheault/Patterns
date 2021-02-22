@@ -1,11 +1,32 @@
-public class Conditional{
-    private String theConditional;
+public class Conditional implements Statement {
+    private Statement condition;
+    private Statement ifStatement;
+    private Statement elseStatement;
 
-    Conditional(String exp, String statement1, String statement2) {
-        theConditional = "if " + exp + " then " + statement1 + " else " + statement2;
+    Conditional(Statement exp, Statement exp1, Statement exp2) {
+        this.condition = exp;
+        this.ifStatement = exp1;
+        this.elseStatement = exp2;
     }
 
-    public String getTheString() {
-        return theConditional;
+    public void print(int indent) {
+        for(int i = 0; i < indent; i++){
+            System.out.print("\t");
+        }
+        System.out.print("If ");
+        this.condition.print(indent+1);
+        System.out.print("\n");
+        for(int i = 0; i < indent; i++){
+            System.out.print("\t");
+        }
+        System.out.print("then\n");
+        this.ifStatement.print(indent +1);
+        System.out.print("\n");
+        for(int i = 0; i < indent; i++){
+            System.out.print("\t");
+        }
+        System.out.print("else\n");
+        this.elseStatement.print(indent +1);
+        System.out.print("\n");
     }
 }
